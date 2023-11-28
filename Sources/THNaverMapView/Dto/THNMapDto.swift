@@ -5,8 +5,9 @@
 //  Created by 유태훈 on 11/28/23.
 //
 
-import Foundation
+import UIKit
 import CoreLocation
+import NMapsMap
 
 public struct THNMapDto {
     var index: Int

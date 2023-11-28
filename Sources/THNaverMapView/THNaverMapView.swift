@@ -34,7 +34,7 @@ open class THNMapView: UIView {
         self.mapView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0).isActive = true
     }
     
-    func setup(_ delegate: THNMapViewDelegate,
+    public func setup(_ delegate: THNMapViewDelegate,
                location: CLLocationCoordinate2D,
                icon: UIImage,
                isZoom: CGFloat = 15) {
@@ -51,7 +51,7 @@ open class THNMapView: UIView {
         self.delegate = delegate
     }
     
-    func reload(_ dto: [THNMapDto]) {
+    public func reload(_ dto: [THNMapDto]) {
         dto.forEach { data in
             self.setCamera(data)
         }
