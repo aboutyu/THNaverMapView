@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		606DB6102703A41B2ED8EBCC /* Pods_THNaverMapView_THNaverMapViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A0E09E4761B54AB9A7C25A /* Pods_THNaverMapView_THNaverMapViewUITests.framework */; };
+		89965E339E69190CD30E0DFC /* Pods_THNaverMapView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B0F27759EA42C6159FD865 /* Pods_THNaverMapView.framework */; };
+		C338D540532A44303B3C98D9 /* Pods_THNaverMapViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07C29BF3006A398D155BF03 /* Pods_THNaverMapViewTests.framework */; };
+		CE180B992B16C526006FFB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180B982B16C526006FFB7D /* AppDelegate.swift */; };
+		CE180B9B2B16C526006FFB7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180B9A2B16C526006FFB7D /* SceneDelegate.swift */; };
+		CE180B9D2B16C526006FFB7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180B9C2B16C526006FFB7D /* ViewController.swift */; };
+		CE180BA02B16C526006FFB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE180B9E2B16C526006FFB7D /* Main.storyboard */; };
+		CE180BA22B16C52B006FFB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE180BA12B16C52B006FFB7D /* Assets.xcassets */; };
+		CE180BA52B16C52B006FFB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE180BA32B16C52B006FFB7D /* LaunchScreen.storyboard */; };
+		CE180BB02B16C52B006FFB7D /* THNaverMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180BAF2B16C52B006FFB7D /* THNaverMapViewTests.swift */; };
+		CE180BBA2B16C52B006FFB7D /* THNaverMapViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180BB92B16C52B006FFB7D /* THNaverMapViewUITests.swift */; };
+		CE180BBC2B16C52B006FFB7D /* THNaverMapViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180BBB2B16C52B006FFB7D /* THNaverMapViewUITestsLaunchTests.swift */; };
+		CE180BCE2B16C6F0006FFB7D /* THNMapDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180BCA2B16C6F0006FFB7D /* THNMapDto.swift */; };
+		CE180BCF2B16C6F0006FFB7D /* THNMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180BCC2B16C6F0006FFB7D /* THNMapViewDelegate.swift */; };
+		CE180BD02B16C6F0006FFB7D /* THNaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180BCD2B16C6F0006FFB7D /* THNaverMapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE180BAC2B16C52B006FFB7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE180B8D2B16C526006FFB7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE180B942B16C526006FFB7D;
+			remoteInfo = THNaverMapView;
+		};
+		CE180BB62B16C52B006FFB7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE180B8D2B16C526006FFB7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE180B942B16C526006FFB7D;
+			remoteInfo = THNaverMapView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32B0F27759EA42C6159FD865 /* Pods_THNaverMapView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THNaverMapView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49485AF96D303507EA16D1B6 /* Pods-THNaverMapView-THNaverMapViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THNaverMapView-THNaverMapViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-THNaverMapView-THNaverMapViewUITests/Pods-THNaverMapView-THNaverMapViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		499F53D82E7C1400C7E10F99 /* Pods-THNaverMapViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THNaverMapViewTests.debug.xcconfig"; path = "Target Support Files/Pods-THNaverMapViewTests/Pods-THNaverMapViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64BF643C850EBA9AA823F67D /* Pods-THNaverMapView-THNaverMapViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THNaverMapView-THNaverMapViewUITests.release.xcconfig"; path = "Target Support Files/Pods-THNaverMapView-THNaverMapViewUITests/Pods-THNaverMapView-THNaverMapViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		968A36F1248F882886B1104D /* Pods-THNaverMapView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THNaverMapView.debug.xcconfig"; path = "Target Support Files/Pods-THNaverMapView/Pods-THNaverMapView.debug.xcconfig"; sourceTree = "<group>"; };
+		96A0E09E4761B54AB9A7C25A /* Pods_THNaverMapView_THNaverMapViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THNaverMapView_THNaverMapViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E99713BCC5F1AC3B4344678 /* Pods-THNaverMapViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THNaverMapViewTests.release.xcconfig"; path = "Target Support Files/Pods-THNaverMapViewTests/Pods-THNaverMapViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		A637140DADFBEA74B86CD186 /* Pods-THNaverMapView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THNaverMapView.release.xcconfig"; path = "Target Support Files/Pods-THNaverMapView/Pods-THNaverMapView.release.xcconfig"; sourceTree = "<group>"; };
+		CE180B952B16C526006FFB7D /* THNaverMapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THNaverMapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE180B982B16C526006FFB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE180B9A2B16C526006FFB7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE180B9C2B16C526006FFB7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE180B9F2B16C526006FFB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE180BA12B16C52B006FFB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE180BA42B16C52B006FFB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE180BA62B16C52B006FFB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE180BAB2B16C52B006FFB7D /* THNaverMapViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THNaverMapViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE180BAF2B16C52B006FFB7D /* THNaverMapViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THNaverMapViewTests.swift; sourceTree = "<group>"; };
+		CE180BB52B16C52B006FFB7D /* THNaverMapViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THNaverMapViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE180BB92B16C52B006FFB7D /* THNaverMapViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THNaverMapViewUITests.swift; sourceTree = "<group>"; };
+		CE180BBB2B16C52B006FFB7D /* THNaverMapViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THNaverMapViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE180BCA2B16C6F0006FFB7D /* THNMapDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THNMapDto.swift; sourceTree = "<group>"; };
+		CE180BCC2B16C6F0006FFB7D /* THNMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THNMapViewDelegate.swift; sourceTree = "<group>"; };
+		CE180BCD2B16C6F0006FFB7D /* THNaverMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THNaverMapView.swift; sourceTree = "<group>"; };
+		F07C29BF3006A398D155BF03 /* Pods_THNaverMapViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THNaverMapViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE180B922B16C526006FFB7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89965E339E69190CD30E0DFC /* Pods_THNaverMapView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE180BA82B16C52B006FFB7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C338D540532A44303B3C98D9 /* Pods_THNaverMapViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE180BB22B16C52B006FFB7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606DB6102703A41B2ED8EBCC /* Pods_THNaverMapView_THNaverMapViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20EF93E267F20AA93EBAE03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				968A36F1248F882886B1104D /* Pods-THNaverMapView.debug.xcconfig */,
+				A637140DADFBEA74B86CD186 /* Pods-THNaverMapView.release.xcconfig */,
+				49485AF96D303507EA16D1B6 /* Pods-THNaverMapView-THNaverMapViewUITests.debug.xcconfig */,
+				64BF643C850EBA9AA823F67D /* Pods-THNaverMapView-THNaverMapViewUITests.release.xcconfig */,
+				499F53D82E7C1400C7E10F99 /* Pods-THNaverMapViewTests.debug.xcconfig */,
+				9E99713BCC5F1AC3B4344678 /* Pods-THNaverMapViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE180B8C2B16C526006FFB7D = {
+			isa = PBXGroup;
+			children = (
+				CE180B972B16C526006FFB7D /* THNaverMapView */,
+				CE180BAE2B16C52B006FFB7D /* THNaverMapViewTests */,
+				CE180BB82B16C52B006FFB7D /* THNaverMapViewUITests */,
+				CE180B962B16C526006FFB7D /* Products */,
+				B20EF93E267F20AA93EBAE03 /* Pods */,
+				D0294533B211F6BC6C388B15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE180B962B16C526006FFB7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE180B952B16C526006FFB7D /* THNaverMapView.app */,
+				CE180BAB2B16C52B006FFB7D /* THNaverMapViewTests.xctest */,
+				CE180BB52B16C52B006FFB7D /* THNaverMapViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE180B972B16C526006FFB7D /* THNaverMapView */ = {
+			isa = PBXGroup;
+			children = (
+				CE180BC82B16C6F0006FFB7D /* lib */,
+				CE180B982B16C526006FFB7D /* AppDelegate.swift */,
+				CE180B9A2B16C526006FFB7D /* SceneDelegate.swift */,
+				CE180B9C2B16C526006FFB7D /* ViewController.swift */,
+				CE180B9E2B16C526006FFB7D /* Main.storyboard */,
+				CE180BA12B16C52B006FFB7D /* Assets.xcassets */,
+				CE180BA32B16C52B006FFB7D /* LaunchScreen.storyboard */,
+				CE180BA62B16C52B006FFB7D /* Info.plist */,
+			);
+			path = THNaverMapView;
+			sourceTree = "<group>";
+		};
+		CE180BAE2B16C52B006FFB7D /* THNaverMapViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE180BAF2B16C52B006FFB7D /* THNaverMapViewTests.swift */,
+			);
+			path = THNaverMapViewTests;
+			sourceTree = "<group>";
+		};
+		CE180BB82B16C52B006FFB7D /* THNaverMapViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE180BB92B16C52B006FFB7D /* THNaverMapViewUITests.swift */,
+				CE180BBB2B16C52B006FFB7D /* THNaverMapViewUITestsLaunchTests.swift */,
+			);
+			path = THNaverMapViewUITests;
+			sourceTree = "<group>";
+		};
+		CE180BC82B16C6F0006FFB7D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CE180BC92B16C6F0006FFB7D /* Dto */,
+				CE180BCB2B16C6F0006FFB7D /* Interface */,
+				CE180BCD2B16C6F0006FFB7D /* THNaverMapView.swift */,
+			);
+			path = lib;
+			sourceTree = SOURCE_ROOT;
+		};
+		CE180BC92B16C6F0006FFB7D /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				CE180BCA2B16C6F0006FFB7D /* THNMapDto.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		CE180BCB2B16C6F0006FFB7D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CE180BCC2B16C6F0006FFB7D /* THNMapViewDelegate.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		D0294533B211F6BC6C388B15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32B0F27759EA42C6159FD865 /* Pods_THNaverMapView.framework */,
+				96A0E09E4761B54AB9A7C25A /* Pods_THNaverMapView_THNaverMapViewUITests.framework */,
+				F07C29BF3006A398D155BF03 /* Pods_THNaverMapViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE180B942B16C526006FFB7D /* THNaverMapView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE180BBF2B16C52B006FFB7D /* Build configuration list for PBXNativeTarget "THNaverMapView" */;
+			buildPhases = (
+				D4AD1A0C6D31E6684E6705A2 /* [CP] Check Pods Manifest.lock */,
+				CE180B912B16C526006FFB7D /* Sources */,
+				CE180B922B16C526006FFB7D /* Frameworks */,
+				CE180B932B16C526006FFB7D /* Resources */,
+				37DED5BAAAD50C8C285A0AC2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = THNaverMapView;
+			productName = THNaverMapView;
+			productReference = CE180B952B16C526006FFB7D /* THNaverMapView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE180BAA2B16C52B006FFB7D /* THNaverMapViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE180BC22B16C52B006FFB7D /* Build configuration list for PBXNativeTarget "THNaverMapViewTests" */;
+			buildPhases = (
+				0E2E9E8D8EFE4CC4AE23D768 /* [CP] Check Pods Manifest.lock */,
+				CE180BA72B16C52B006FFB7D /* Sources */,
+				CE180BA82B16C52B006FFB7D /* Frameworks */,
+				CE180BA92B16C52B006FFB7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE180BAD2B16C52B006FFB7D /* PBXTargetDependency */,
+			);
+			name = THNaverMapViewTests;
+			productName = THNaverMapViewTests;
+			productReference = CE180BAB2B16C52B006FFB7D /* THNaverMapViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE180BB42B16C52B006FFB7D /* THNaverMapViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE180BC52B16C52B006FFB7D /* Build configuration list for PBXNativeTarget "THNaverMapViewUITests" */;
+			buildPhases = (
+				CD68A870BBAAE478428AA053 /* [CP] Check Pods Manifest.lock */,
+				CE180BB12B16C52B006FFB7D /* Sources */,
+				CE180BB22B16C52B006FFB7D /* Frameworks */,
+				CE180BB32B16C52B006FFB7D /* Resources */,
+				E548B27D5964FB111AE5B2EA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE180BB72B16C52B006FFB7D /* PBXTargetDependency */,
+			);
+			name = THNaverMapViewUITests;
+			productName = THNaverMapViewUITests;
+			productReference = CE180BB52B16C52B006FFB7D /* THNaverMapViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE180B8D2B16C526006FFB7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CE180B942B16C526006FFB7D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					CE180BAA2B16C52B006FFB7D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = CE180B942B16C526006FFB7D;
+					};
+					CE180BB42B16C52B006FFB7D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = CE180B942B16C526006FFB7D;
+					};
+				};
+			};
+			buildConfigurationList = CE180B902B16C526006FFB7D /* Build configuration list for PBXProject "THNaverMapView" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE180B8C2B16C526006FFB7D;
+			productRefGroup = CE180B962B16C526006FFB7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE180B942B16C526006FFB7D /* THNaverMapView */,
+				CE180BAA2B16C52B006FFB7D /* THNaverMapViewTests */,
+				CE180BB42B16C52B006FFB7D /* THNaverMapViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE180B932B16C526006FFB7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE180BA52B16C52B006FFB7D /* LaunchScreen.storyboard in Resources */,
+				CE180BA22B16C52B006FFB7D /* Assets.xcassets in Resources */,
+				CE180BA02B16C526006FFB7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE180BA92B16C52B006FFB7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE180BB32B16C52B006FFB7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E2E9E8D8EFE4CC4AE23D768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-THNaverMapViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37DED5BAAAD50C8C285A0AC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THNaverMapView/Pods-THNaverMapView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THNaverMapView/Pods-THNaverMapView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-THNaverMapView/Pods-THNaverMapView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD68A870BBAAE478428AA053 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-THNaverMapView-THNaverMapViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4AD1A0C6D31E6684E6705A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-THNaverMapView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E548B27D5964FB111AE5B2EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THNaverMapView-THNaverMapViewUITests/Pods-THNaverMapView-THNaverMapViewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THNaverMapView-THNaverMapViewUITests/Pods-THNaverMapView-THNaverMapViewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-THNaverMapView-THNaverMapViewUITests/Pods-THNaverMapView-THNaverMapViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE180B912B16C526006FFB7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE180BD02B16C6F0006FFB7D /* THNaverMapView.swift in Sources */,
+				CE180B9D2B16C526006FFB7D /* ViewController.swift in Sources */,
+				CE180BCF2B16C6F0006FFB7D /* THNMapViewDelegate.swift in Sources */,
+				CE180BCE2B16C6F0006FFB7D /* THNMapDto.swift in Sources */,
+				CE180B992B16C526006FFB7D /* AppDelegate.swift in Sources */,
+				CE180B9B2B16C526006FFB7D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE180BA72B16C52B006FFB7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE180BB02B16C52B006FFB7D /* THNaverMapViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE180BB12B16C52B006FFB7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE180BBA2B16C52B006FFB7D /* THNaverMapViewUITests.swift in Sources */,
+				CE180BBC2B16C52B006FFB7D /* THNaverMapViewUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE180BAD2B16C52B006FFB7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE180B942B16C526006FFB7D /* THNaverMapView */;
+			targetProxy = CE180BAC2B16C52B006FFB7D /* PBXContainerItemProxy */;
+		};
+		CE180BB72B16C52B006FFB7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE180B942B16C526006FFB7D /* THNaverMapView */;
+			targetProxy = CE180BB62B16C52B006FFB7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE180B9E2B16C526006FFB7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE180B9F2B16C526006FFB7D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE180BA32B16C52B006FFB7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE180BA42B16C52B006FFB7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE180BBD2B16C52B006FFB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE180BBE2B16C52B006FFB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE180BC02B16C52B006FFB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968A36F1248F882886B1104D /* Pods-THNaverMapView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Q9NAZW6HB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = THNaverMapView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.idsTrustTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE180BC12B16C52B006FFB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A637140DADFBEA74B86CD186 /* Pods-THNaverMapView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Q9NAZW6HB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = THNaverMapView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.idsTrustTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE180BC32B16C52B006FFB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499F53D82E7C1400C7E10F99 /* Pods-THNaverMapViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.THNaverMapViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/THNaverMapView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/THNaverMapView";
+			};
+			name = Debug;
+		};
+		CE180BC42B16C52B006FFB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E99713BCC5F1AC3B4344678 /* Pods-THNaverMapViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.THNaverMapViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/THNaverMapView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/THNaverMapView";
+			};
+			name = Release;
+		};
+		CE180BC62B16C52B006FFB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49485AF96D303507EA16D1B6 /* Pods-THNaverMapView-THNaverMapViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.THNaverMapViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = THNaverMapView;
+			};
+			name = Debug;
+		};
+		CE180BC72B16C52B006FFB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64BF643C850EBA9AA823F67D /* Pods-THNaverMapView-THNaverMapViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.THNaverMapViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = THNaverMapView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE180B902B16C526006FFB7D /* Build configuration list for PBXProject "THNaverMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE180BBD2B16C52B006FFB7D /* Debug */,
+				CE180BBE2B16C52B006FFB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE180BBF2B16C52B006FFB7D /* Build configuration list for PBXNativeTarget "THNaverMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE180BC02B16C52B006FFB7D /* Debug */,
+				CE180BC12B16C52B006FFB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE180BC22B16C52B006FFB7D /* Build configuration list for PBXNativeTarget "THNaverMapViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE180BC32B16C52B006FFB7D /* Debug */,
+				CE180BC42B16C52B006FFB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE180BC52B16C52B006FFB7D /* Build configuration list for PBXNativeTarget "THNaverMapViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE180BC62B16C52B006FFB7D /* Debug */,
+				CE180BC72B16C52B006FFB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE180B8D2B16C526006FFB7D /* Project object */;
+}
