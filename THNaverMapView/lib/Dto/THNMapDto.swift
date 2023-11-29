@@ -17,7 +17,7 @@ public struct THNMapDto {
     public var icon: UIImage?
     public var data: Any?
 
-    init(_ index: Int, location: CLLocationCoordinate2D, name: String? = nil, description: String? = nil, icon: UIImage? = nil, data: Any? = nil) {
+    public init(_ index: Int, location: CLLocationCoordinate2D, name: String? = nil, description: String? = nil, icon: UIImage? = nil, data: Any? = nil) {
         self.index = index
         self.location = location
         self.name = name
