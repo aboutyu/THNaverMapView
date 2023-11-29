@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
   spec.swift_version    = spec.swift_version.to_s
   spec.source           = { :git => "https://github.com/aboutyu/THNaverMapView.git", :tag => spec.version }
   spec.source_files     = 'THNaverMapView/lib/**/*'
-  spec.dependency       = 'NMapsMap'
+  spec.dependency       'NMapsMap'
 
 end
