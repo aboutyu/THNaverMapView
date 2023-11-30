@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name             = "THNaverMapView"
-  spec.version          = "1.0.1"
+  spec.version          = "1.0.2"
   spec.summary          = "Super Easy Using Naver Map"
   spec.description      = "This is Super Easy Naver Map Wrapper View"
   spec.homepage         = "https://github.com/aboutyu/THNaverMapView"
