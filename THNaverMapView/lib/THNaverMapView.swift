@@ -15,6 +15,7 @@ open class THNMapView: UIView {
     private let mng = NMFAuthManager()
     private var delegate: THNMapViewDelegate?
     private var iconImage: UIImage = UIImage()
+    private var isZoom: CGFloat = 15
         
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -38,16 +39,9 @@ open class THNMapView: UIView {
                location: CLLocationCoordinate2D,
                icon: UIImage,
                isZoom: CGFloat = 15) {
-        let position = NMFCameraPosition(NMGLatLng(lat: location.latitude, lng: location.longitude),
-                                         zoom: isZoom,
-                                         tilt: 0,
-                                         heading: 0)
-        let updated = NMFCameraUpdate(position: position)
-        self.mapView.moveCamera(updated)
-        self.mapView.mapType = .basic
-        self.mapView.symbolScale = 1.0
-        
+        self.moveCamera(location)
         self.iconImage = icon
+        self.isZoom = isZoom
         self.delegate = delegate
     }
     
@@ -70,6 +64,16 @@ open class THNMapView: UIView {
             return true
         }
         marker.mapView = self.mapView
+    }
+    
+    public func moveCamera(_ location: CLLocationCoordinate2D, icon: UIImage? = nil) {
+        let nmgLatLng = NMGLatLng(lat: location.latitude, lng: location.longitude)
+        let position = NMFCameraPosition(nmgLatLng, zoom: self.isZoom, tilt: 0, heading: 0)
+        let updated = NMFCameraUpdate(position: position)
+        
+        self.mapView.moveCamera(updated)
+        self.mapView.mapType = .basic
+        self.mapView.symbolScale = 1.0
     }
 }
 

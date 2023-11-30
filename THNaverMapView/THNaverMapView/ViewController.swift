@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var mapView: THNMapView!
+
+    @IBAction func moveTapped(_ sender: UIButton) {
+        mapView.moveCamera(CLLocationCoordinate2D(latitude: 37.29477, longitude: 127.1213))
+    }
     
     let dto: [THNMapDto] = [THNMapDto(0,
                                       location: CLLocationCoordinate2D(latitude: 37.51012, longitude: 127.0631),

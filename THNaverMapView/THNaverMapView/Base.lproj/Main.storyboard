@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -26,6 +27,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yd-Y9-0HT">
+                                <rect key="frame" x="288" y="753" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="moveTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="klA-lr-4PT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,7 +45,9 @@
                             <constraint firstItem="utQ-k3-RNE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bdr-WB-JbQ"/>
                             <constraint firstAttribute="bottom" secondItem="utQ-k3-RNE" secondAttribute="bottom" id="SqT-uh-UY3"/>
                             <constraint firstItem="utQ-k3-RNE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dzx-0u-kpv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2yd-Y9-0HT" secondAttribute="trailing" constant="30" id="en5-kN-zCa"/>
                             <constraint firstItem="5t2-6V-Bi8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jyp-ag-Hoo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2yd-Y9-0HT" secondAttribute="bottom" constant="30" id="pyn-cL-49O"/>
                         </constraints>
                     </view>
                     <connections>
